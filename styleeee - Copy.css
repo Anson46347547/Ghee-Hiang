@@ -1,0 +1,313 @@
+header{
+    position: relative;
+    z-index: 2; /* Ensure header is on top of other elements */
+    width: 100%;
+    background-color: transparent; /* Adjust this as needed */
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.menu li {
+    margin-right: 30px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.menu-toggle {
+    display: none; /* Initially hide the burger menu icon */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: black; /* Change the color to black */
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-toggle span:not(:last-child) {
+    margin-bottom: 4px; /* Adjust spacing between lines */
+}
+
+.menu-toggle.open span:first-child {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.open span:last-child {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.menu-toggle:hover span {
+    background-color: #ffffff;
+}
+
+
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Display the burger menu icon when window size is smaller */
+    }
+
+    .menu {
+        display: none; /* Initially hide the menu items */
+    }
+
+    .menu.show {
+        display: flex; /* Show the menu items when the burger menu icon is clicked */
+        flex-direction: column;
+        position: absolute;
+        top: 40px; /* Adjust as needed */
+        left: 0;
+        background-color: #ff0000;
+        width: 100%;
+        padding: 10px;
+        z-index: 999;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* CSS rules for smaller screens */
+}
+
+.header {
+    text-align: center; /* Center align the content */
+}
+
+.header ul {
+    list-style-type: none; /* Remove bullet points */
+   
+}
+
+.header ul li {
+    display: inline-block; /* Display list items horizontally */
+}
+
+.header ul li:last-child {
+    margin-right: 0; /* Remove margin from the last menu item to prevent extra spacing */
+}
+
+.header ul li a {
+    text-decoration: none;
+    color: #000000d0;
+    font-size: 18px;
+    font-family: Arial;
+    letter-spacing: 2px;
+    font-weight: 600;
+   margin-left:95px;
+}
+
+.header ul li a:hover {
+    color: rgb(165, 112, 42);
+}
+
+.header ul li.logo-container {
+    margin-right: 5px; /* Adjust margin to move the logo further to the right */
+}
+
+body {
+    background: url('Picture.png');
+    background-repeat: repeat;
+    background-size: contain;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.line-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+svg {
+    display: inline-block;
+    height: 100%;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 3s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+section img {
+    max-width: 50%; /* Make images responsive */
+    height: 50%; /* Maintain aspect ratio */
+    display: block; /* Ensure images don't have extra space below them */
+    margin: 10px auto; /* Add margin for better spacing */
+}
+
+#section2 img {
+    max-width: 50%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure images don't have extra space below them */
+    margin: 10px auto; /* Add margin for better spacing */
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    background: rgb(83, 17, 17);
+    min-height: 100px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+   
+}
+
+footer .social_icon, footer .menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+footer .social_icon li, footer .menu li{
+    list-style: none;
+}
+
+footer .social_icon li a{
+    font-size: 2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+footer .social_icon li a:hover{
+    transform: translateY(-10px);
+}
+
+footer .menu li a{
+    font-size: 1.2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+footer .menu li a:hover{
+    opacity: 1;
+}
+
+footer p{
+    color:#fff;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+footer .wave{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(wave.png);
+    background-size: 1000px 100px;
+}
+
+footer .wave#wave1{
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+
+}
+
+footer .wave#wave2{
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_02 4s linear infinite;
+
+}
+
+@keyframes animateWave {
+    0%
+    {
+        background-position-x: 1000px;
+    }
+    100%
+    {
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animateWave_02 {
+    0%
+    {
+        background-position-x: 0px;
+    }
+    100%
+    {
+        background-position-x: 1000px;
+    }
+}
+
+.scrollTop{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 10px 15px;
+    background-color: #c7935c;
+    color: #fff;
+    border-radius: 5px;
+    border-radius: 1px solid #fff;
+    cursor: pointer;
+    transition: all 0.5 ease 0s;
+  }
+  
+  .scrollTop:hover{
+    background-color: #f7f7f7;
+    color: #c7935c;
+  }

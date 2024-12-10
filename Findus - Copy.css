@@ -1,0 +1,412 @@
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu li {
+    margin-right: 30px;
+  }
+  
+  .menu li:last-child {
+    margin-right: 0;
+  }
+  
+  .menu a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  
+  .menu-toggle {
+    display: none; /* Initially hide the burger menu icon */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  .menu-toggle span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: black; /* Change the color to black */
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .menu-toggle span:not(:last-child) {
+    margin-bottom: 4px; /* Adjust spacing between lines */
+  }
+  
+  .menu-toggle.open span:first-child {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .menu-toggle.open span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menu-toggle.open span:last-child {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  
+  .menu-toggle:hover span {
+    background-color: #ffffff;
+  }
+  
+  @media (max-width: 100px) {
+    .menu-toggle {
+        display: block; /* Display the burger menu icon when window size is smaller */
+    }
+  
+    .menu {
+        display: none; /* Initially hide the menu items */
+    }
+  
+    .menu.show {
+        display: flex; /* Show the menu items when the burger menu icon is clicked */
+        flex-direction: column;
+        position: absolute;
+        top: 40px; /* Adjust as needed */
+        left: 0;
+        background-color: #ff0000;
+        width: 100%;
+        padding: 10px;
+        z-index: 999;
+    }
+  }
+  
+  @media only screen and (max-width: 800px) {
+    /* CSS rules for smaller screens */
+  }
+  
+  body{
+      justify-content: flex-end;
+      align-items: flex-end;
+      margin:0;
+      padding:0;
+      font-family: Arial;
+  }
+  
+  
+  .storepic1 img{
+    position: relative;
+    display: block;
+    width: 400px;
+    border-radius:20px;
+    margin: 0 10px;
+    top: 10px;
+  } 
+  
+  .text-one{
+    position: relative;
+    left: 180px;
+    bottom:290px;
+  }
+  
+  .map1{
+    position: relative;
+    left: 200px;
+    bottom:285px;
+  }
+  
+  .storepic2 img{
+    position: relative;
+    display: block;
+    width: 400px;
+    border-radius:20px;
+    margin: 0 10px;
+    bottom:250px;
+  } 
+  
+  .text-two{
+    position: relative;
+    left: 180px;
+    bottom:550px;
+  }
+  
+  .map2{
+    position: relative;
+    left: 200px;
+    bottom:550px;
+  }
+  
+  .storepic3 img{
+    position: absolute;
+    display: block;
+    width: 400px;
+    border-radius:20px;
+    margin: 0 10px;
+    bottom:460px;
+  } 
+  
+  .text-three{
+    position: relative;
+    left: 180px;
+    bottom:180px;
+  }
+  
+  .map3{
+    position: relative;
+    left: 200px;
+    bottom:180px;
+  }
+  
+  .storepic4 img{
+    position: absolute;
+    display: block;
+    max-width: 400px;
+    border-radius:20px;
+    margin: 0 10px;
+    bottom:820px;
+  } 
+  
+  .text-four{
+    position: relative;
+    left: 180px;
+    bottom:820px;
+  }
+  
+  .map4{
+    position: relative;
+    left: 200px;
+    bottom:820px;
+  }
+  
+  .header{
+      position: absolute;
+      margin-left: 50%;
+      transform: translateX(-50%);
+      width:100%;
+      z-index: 1;
+      
+  }
+  
+  .header ul{
+      text-align: center;
+  }
+  
+  .header ul li{
+      list-style: none;
+      display: inline-block;
+  }
+  
+  .header ul li a{
+    text-decoration: none;
+    color: #000000d0;
+    font-size: 18px;
+    font-family: Arial;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-left:95px;
+  }
+  
+  .header ul li a:hover{
+      color:rgb(165, 112, 42);
+  }
+  
+  ul.single_category {
+      padding: 10px 20px 20px 20px;
+  }
+  
+  ul.single_category {
+      display: block;
+      width: 96%;
+      max-width: 1280px;
+      padding: 0;
+      list-style-type: none;
+      margin: 0 auto;
+      padding: 0 20px 20px 20px;
+      border-bottom: 1px dashed #cccccc;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+  }
+  
+  ul.single_category li {
+      width: 27%;
+      margin: 10px 0 0 0;
+  }
+  
+  ul.single_category li {
+      font-size: 13px;
+      padding: 0 0 0 12px;
+  }
+  
+  ul.single_category li {
+      width: 28%;
+  }
+  
+  ul.single_category li {
+      width: 20%;
+      outline: 0px solid #000;
+  }
+  
+  ul.single_category li {
+      position: relative;
+      display: inline-block;
+      width: 10%;
+      margin: 20px 0 0 0;
+      padding: 0 0 0 20px;
+      font-size: 14px;
+      vertical-align: top;
+  }
+  
+  ul.single_category li:before {
+      position: absolute;
+      left: 0;
+      top: 7px;
+      width: 4px;
+      height: 4px;
+  }
+  
+  ul.single_category li:before {
+      position: absolute;
+      left: 0;
+      top: 7px;
+      content: "";
+      width: 6px;
+      height: 6px;
+      background-color: #CE0027;
+      border-radius: 100%;
+  }
+  
+  .Store-location {
+      width: 900px;
+      position: relative;
+      top: 200px; /* Adjust the top value to move the container down */
+      margin: 0 auto;
+      text-align: center;
+      
+  }
+  
+  footer{
+    position: relative;
+    width: 100%;
+    background: rgb(83, 17, 17);
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+  
+  footer .social_icon, footer .menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+  
+  footer .social_icon li, footer .menu li{
+    list-style: none;
+  }
+  
+  footer .social_icon li a{
+    font-size: 2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+  }
+  
+  footer .social_icon li a:hover{
+    transform: translateY(-10px);
+  }
+  
+  footer .menu li a{
+    font-size: 1.2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.75;
+  }
+  
+  footer .menu li a:hover{
+    opacity: 1;
+  }
+  
+  footer p{
+    color:#fff;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+  }
+  
+  footer .wave{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(wave.png);
+    background-size: 1000px 100px;
+  }
+  
+  footer .wave#wave1{
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+  
+  }
+  
+  footer .wave#wave2{
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_02 4s linear infinite;
+  
+  }
+  
+  @keyframes animateWave {
+    0%
+    {
+        background-position-x: 1000px;
+    }
+    100%
+    {
+        background-position-x: 0px;
+    }
+  }
+  
+  @keyframes animateWave_02 {
+    0%
+    {
+        background-position-x: 0px;
+    }
+    100%
+    {
+        background-position-x: 1000px;
+    }
+  }
+  
+  .scrollTop{
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      padding: 10px 15px;
+      background-color: #c7935c;
+      color: #fff;
+      border-radius: 5px;
+      border-radius: 1px solid #fff;
+      cursor: pointer;
+      transition: all 0.5 ease 0s;
+    }
+    
+    .scrollTop:hover{
+      background-color: #ffffff;
+      color: #c7935c;
+    }
+
+  
