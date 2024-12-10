@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+      <link rel="stylesheet" href="Findus.css">
+      <script defer src="function.js"></script>
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    const menuToggle = document.getElementById("menu-toggle");
+    const menu = document.querySelector(".menu");
+
+    function toggleMenu() {
+        menu.classList.toggle("show");
+        menuToggle.classList.toggle("open");
+    }
+
+    menuToggle.addEventListener("click", toggleMenu);
+
+    // Function to hide or show the burger menu icon based on window size
+    function checkWindowSize() {
+        if (window.innerWidth <= 768) {
+            menuToggle.style.display = "block"; // Show the burger menu icon
+            menu.classList.remove("show"); // Hide the menu items
+        } else {
+            menuToggle.style.display = "none"; // Hide the burger menu icon
+            menu.classList.remove("show"); // Hide the menu items
+        }
+    }
+
+    // Initial check when the page loads
+    checkWindowSize();
+
+    // Event listener for window resize
+    window.addEventListener("resize", checkWindowSize);
+  });
+
+
+    </script>
+  </head>
+  <body>
+
+
+      <!--header-->
+      <div class="header">
+        <button id="menu-toggle" class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="menu">
+          <li><a href="browsescroll.html">About Us</a></li>
+          <li><a href="browseevent.html">News/Events</a></li>
+          <li><a href="browsehome.html"><img src="dragon.gif" alt="logo" width="343" height="200"></a></li>
+          <li><a href="browsegheehiang.php">Shop with Ghee Hiang</a></li>
+          <li><a href="browsefindus.html">Find Us </a></li>
+        </ul>
+    </div>
+
+   
+
+      <div class="Store-location">
+          <h2 class="product-title">Physical Store Location</h2>
+          <hr>  
+
+          <div id="store_cbe4da4e-6e9a-11e6-ab51-000c292bcf18" class="product-tab-title" bis_skin_checked="1"> 
+
+          </div>         
+              <div class="storepic1">                     
+                  <div class="item-pic">
+                      <img class="pic1" src="store1.jpg" alt="store 1" title="Image 1">
+                    
+                    <div class="text-one">BEACH STREET RETAIL BOUTIQUE<br>95 Beach Street, 10300 Penang</div>
+                   
+                  </div>
+                  <div class="map1">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.0090718882598!2d100.33743367503153!3d5.415587094563679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304ac38e0ccc2947%3A0x98d68384a6548ab9!2s95%2C%20Beach%20St%2C%20Georgetown%2C%2010200%20George%20Town%2C%20Penang!5e0!3m2!1szh-CN!2smy!4v1707631431574!5m2!1szh-CN!2smy" width="350" height="250" style="border-radius:20px;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+              </div>
+
+              <div class="storepic2">                     
+                  <div class="item-pic2">
+                      <img class="pic2" src="store2.jpg" alt="store 2" title="Image 2">
+                    <div class="text-two">MACALISTER ROAD RETAIL BOUTIQUE<br>216 Macalister Road, 10400 Penang</div>
+                  </div> 
+                  <div class="map2">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.9942282631796!2d100.31910577503152!3d5.417845194561384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304ac3bb8081ef6d%3A0xed3937a468c2901f!2sGhee%20Hiang%2C%20216%2C%20Jln%20Macalister%2C%2010400%20George%20Town%2C%20Penang!5e0!3m2!1szh-CN!2smy!4v1707632040581!5m2!1szh-CN!2smy" width="350" height="250" style="border-radius: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>        
+              </div>
+
+              <div class="storepic3">                     
+                  <div class="item-pic3">
+                      <img src="store3.jpg" alt="store 3" title="Image 3">               
+                    <div class="text-three">BURMAH ROAD RETAIL BOUTIQUE<br>144-G & H Burmah Road, 10050 Penang</div>
+                  </div>
+              <div class="map3">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.9578658792884!2d100.31955517503158!3d5.423372894555896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304ac3a383cb8727%3A0x1f29c873b76fa070!2s144%2C%20Jalan%20Burma%2C%2010400%20George%20Town%2C%20Pulau%20Pinang!5e0!3m2!1szh-CN!2smy!4v1707632228137!5m2!1szh-CN!2smy" width="350" height="250" style="border-radius:20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>         
+              </div>
+              
+              <div class="storepic4">                     
+                  <div class="item-pic4">
+                      <img src="store4.jpg" alt="store 4" title="Image 4">
+                    
+                    <div class="text-four">GHEE HIANG SUNSHINE FARLIM</div>
+              
+                  </div>
+                  <div class="map4">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1986.0684272013666!2d100.28457173855655!3d5.396109098645734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304ac223721c5f9b%3A0xe3c7f085723cd9e0!2sGhee%20Hiang%20Sunshine%20Farlim!5e0!3m2!1szh-CN!2smy!4v1707632368647!5m2!1szh-CN!2smy" width="350" height="250" style="border-radius: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>         
+              </div>
+          </div>
+        
+            <footer>
+                <div class="waves">
+                    <div class="wave" id="wave1"></div>
+                    <div class="wave" id="wave2"></div>
+                    <div class="wave" id="wave3"></div>
+                    <div class="wave" id="wave4"></div>
+                </div>
+                <ul class="social_icon">
+                    <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-youtube"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+                </ul>
+                <ul class="menu">
+                  <li><a href="browsescroll.html">About Us</a></li>
+                  <li><a href="browseevent.html">News/Events</a></li>
+                  <li><a href="browsegheehiang.php">Shop With Ghee Hiang</a></li>
+                  <li><a href="browsefindus.html">Location</a></li>
+                </ul>
+                <p>Ghee Hiang | All Rights Reserved.</p>
+            </footer>
+            <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        
+        
+            <div onclick="scrollToTop()" class="scrollTop">Top</div>
+        
+            <script>
+            
+              function scrollToTop(){
+                window.scrollTo(0,0);
+              }
+            </script>
+
+          </body>
+          </html>

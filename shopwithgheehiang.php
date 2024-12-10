@@ -61,7 +61,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="shopss.css">
+    <link rel="stylesheet" href="shopwithgheehiangs.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -81,11 +81,11 @@
       </button>
 
       <ul class="menu">
-      <li><a href="browsescroll.html">About Us</a></li>
-        <li><a href="browseevent.html">News/Events</a></li>
-        <li><a href="browsehome.html"><img src="dragon.gif" alt="logo" width="343" height="200"></a></li>
-        <li><a href="browsegheehiang.php">Shop with Ghee Hiang</a></li>
-        <li><a href="browsefindus.html">Find Us </a></li>
+          <li><a href="sroll.html">About Us</a></li>
+          <li><a href="Eventpage.html">News/Events</a></li>
+          <li><a href="homepage.html"><img src="dragon.gif" alt="logo" width="343" height="200"></a></li>
+          <li><a href="shopwithgheehiang.php">Shop with Ghee Hiang</a></li>
+          <li><a href="FindUs.html">Find Us</a></li>
       </ul>
   </div>
 
@@ -101,12 +101,29 @@
   <div class="user-actions">
     
     <div class="logout">
-        <a href="Login.php" class="logout-button">Login</a>
+        <a href="browsehome.html" class="logout-button">Logout</a>
     </div>
 </div>
 
-    <br>
-    <br>    
+        <div class="userlogo">
+            <a href="otp_request.php">
+                <img src="userlogo.png">
+            </a>   
+        </div>
+
+        <div class="cartlogo">
+        <a href="Totalcart.php">
+                <img src="cart.png">
+            </a>   
+        </div>
+
+        <div class="History">
+        <a href="history.php" class="History-button">History</a>
+    </div>
+</div>
+
+<br>
+<br>    
 
   <!-- Tab Menu Section -->
   <div class="tab-menu">
@@ -135,7 +152,7 @@
             // Check if the product is in stock
             if ($product['stock_quantity'] > 0) {
                 // If in stock, show the Add to Cart button
-                echo '<a href="Login.php?product_id=' . $product['product_id'] . '" class="add-to-cart-button">Add to Cart</a>';
+                echo '<a href="itempage.php?product_id=' . $product['product_id'] . '" class="add-to-cart-button">Add to Cart</a>';
             } else {
                 // If out of stock, show a button that triggers a popup message
                 echo '<a href="#" onclick="alert(\'No stock available right now\'); return false;" class="add-to-cart-button out-of-stock">Out of Stock</a>';
@@ -176,10 +193,10 @@
           <li><a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
       </ul>
       <ul class="menu">
-      <li><a href="browsescroll.html">About Us</a></li>
-        <li><a href="browseevent.html">News/Events</a></li>
-        <li><a href="browsegheehiang.php">Shop With Ghee Hiang</a></li>
-        <li><a href="browsefindus.html">Location</a></li>
+                <li><a href="sroll.html">About Us</a></li>
+                <li><a href="Eventpage.html">News/Events</a></li>
+                <li><a href="shopwithgheehiang.php">Shop With Ghee Hiang</a></li>
+                <li><a href="FindUs.html">Location</a></li>
       </ul>
       <p>Ghee Hiang | All Rights Reserved.</p>
   </footer>

@@ -1,0 +1,342 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+  .btn.btn-outline-success{
+    color: #aa5b00; 
+    border-color: #f5d33b;
+    margin-right: 2rem;
+  }
+  
+  .btn.btn-outline-success:hover{
+    color: #fff; /* Text color on hover */
+    background-color: #c44c1d; /* Background color on hover */
+    border-color: #b6721a; /* Outline color on hover */
+  }
+  
+  
+  
+  .sm-icons{
+    font-size: 1.5rem; 
+    margin-right: 0.5rem;
+  }
+  
+  .cart-bg{
+    margin-right: 1rem;
+    color: #000000;
+  }
+  
+  .person-bg{
+    margin-right: 1rem;
+    color: #000000;
+  }
+  
+  .img-fluid{
+    max-width: 100%;
+    height: auto;
+  }
+  
+  #parent{
+    position: relative;
+  }
+  
+  .gold{
+    position:fixed;
+    top:1px;
+    
+  }
+  
+  .content1{
+    position:absolute;
+    top:50px;
+    left:750px;
+    right:60px;
+  }
+  
+  p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+  }
+  
+  .vison{
+    color: #c39f77;
+    font-size: 30px;
+  }
+  
+  .mission{
+    color: #c39f77;font-size: 30px;
+  }
+  
+  .over{
+    font-family:Droid Serif; 
+    font-weight:500; 
+    font-style:normal; 
+    font-size: 17px; 
+    color: #1b1b1b !important; 
+    line-height: 17.94px; 
+    letter-spacing: 5px;
+  } 
+  
+  .hiang{
+    font-family:Playfair Display; 
+    font-weight:800; 
+    font-style:normal; 
+    font-size: 30px; 
+    color: #1b1b1b !important; 
+    line-height: 40px; 
+    letter-spacing: 0px;
+  }
+  
+  .dato{
+    position:absolute;
+    right:950px;
+  }
+  
+  .content2{
+    position: absolute;
+    left: 50px;
+    width: calc(50% - 50px);
+    top: 300px;
+  }
+  
+  .dato2{
+    position:absolute;
+    left:1000px;
+  }
+  
+  .content3{
+    position: absolute;
+    right: 50px;
+    width: calc(50% - 50px); /* Adjust the width as needed */
+    top: 300px;
+  }
+  
+  .line{
+    position:relative;
+    top:680px;
+  }
+  
+  .content4{
+    position: absolute;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    font-family: "texgyreadventorregular";
+    line-height: 26.4px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color:#dbae47;
+  }
+  
+  .baby{
+    position:absolute;
+    left:180px;
+    top:680px;
+  }
+  
+  .content4{
+    position:absolute;
+    left:600px;
+    top:1150px;
+  }
+  
+  .babydes{
+    position:absolute;
+    right:200px;
+    top:1200px;
+    left:200px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:200px;
+  }
+  
+  .footer{
+    position: absolute;
+    top:2250px;
+    width:100%;
+  }
+  
+  .line2{
+    position:relative;
+    top:1295px;
+  }
+
+  .footer-section {
+    background: #f5b915;
+    position: relative;
+  }
+  .footer-cta {
+    border-bottom: 1px solid #373636;
+  }
+  .single-cta i {
+    color: #000000;
+    font-size: 30px;
+    float: left;
+    margin-top: 8px;
+  }
+  .cta-text {
+    padding-left: 15px;
+    display: inline-block;
+  }
+  .cta-text h4 {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+  .cta-text span {
+    color: #757575;
+    font-size: 15px;
+  }
+  .footer-content {
+    position: relative;
+    z-index: 2;
+  }
+  .footer-pattern img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 330px;
+    background-size: cover;
+    background-position: 100% 100%;
+  }
+  .footer-logo {
+    margin-bottom: 30px;
+  }
+  .footer-logo img {
+      max-width: 200px;
+  }
+  .footer-text p {
+    margin-bottom: 14px;
+    font-size: 14px;
+        color: #7e7e7e;
+    line-height: 28px;
+  }
+  .footer-social-icon span {
+    color: #000000;
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+  }
+  .footer-social-icon a {
+    color: #ffffff;
+    font-size: 20px;
+    margin-right: 20px;
+  }
+  .footer-social-icon i {
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+  }
+  .facebook-bg{
+    background: #3B5998;
+  }
+  .instagram-bg{
+    background: #ee9c20;
+  }
+  .youtube-bg{
+    background: #aa1906;
+  }
+  .footer-widget-heading h3 {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+  }
+  .footer-widget-heading h3::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    height: 2px;
+    width: 50px;
+    background: #ff5e14;
+  }
+  .footer-widget ul li {
+    display: inline-block;
+    float: left;
+    width: 50%;
+    margin-bottom: 12px;
+  }
+  .footer-widget ul li a:hover{
+    color: #b47355;
+  }
+  .footer-widget ul li a {
+    color: #878787;
+    text-transform: capitalize;
+  }
+  .subscribe-form {
+    position: relative;
+    overflow: hidden;
+  }
+  .subscribe-form input {
+    width: 100%;
+    padding: 14px 28px;
+    background: #2E2E2E;
+    border: 1px solid #2E2E2E;
+    color: #ffffff;
+  }
+  .subscribe-form button {
+      position: absolute;
+      right: 0;
+      background: #ff5e14;
+      padding: 13px 20px;
+      border: 1px solid #ff5e14;
+      top: 0;
+  }
+  .subscribe-form button i {
+    color: #fff;
+    font-size: 22px;
+    transform: rotate(-6deg);
+  }
+  .copyright-area{
+    background: #202020;
+    padding: 25px 0;
+  }
+  .copyright-text p {
+    margin: 0;
+    font-size: 14px;
+    color: #878787;
+  }
+  .copyright-text p a{
+    color: #ff5e14;
+  }
+  .footer-menu li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  .footer-menu li:hover a{
+    color: #ff5e14;
+  }
+  .footer-menu li a {
+    font-size: 14px;
+    color: #878787;
+  }
+  
+  .scrollTop{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 10px 15px;
+    background-color: #000000;
+    color: #fff;
+    border-radius: 5px;
+    border-radius: 1px solid #fff;
+    cursor: pointer;
+    transition: all 0.5 ease 0s;
+  }
+  
+  .scrollTop:hover{
+    background-color: #f7f7f7;
+    color: #000000;
+  }

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" component="width=device-width, initial-scale=1.0">
+        <title>About Us</title>
+
+        <link rel="stylesheet" href="styleeee.css">
+        <script defer src="java.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+         const menuToggle = document.getElementById("menu-toggle");
+         const menu = document.querySelector(".menu");
+     
+         function toggleMenu() {
+             menu.classList.toggle("show");
+             menuToggle.classList.toggle("open");
+         }
+     
+         menuToggle.addEventListener("click", toggleMenu);
+     
+         // Function to hide or show the burger menu icon based on window size
+         function checkWindowSize() {
+             if (window.innerWidth <= 768) {
+                 menuToggle.style.display = "block"; // Show the burger menu icon
+                 menu.classList.remove("show"); // Hide the menu items
+             } else {
+                 menuToggle.style.display = "none"; // Hide the burger menu icon
+                 menu.classList.remove("show"); // Hide the menu items
+             }
+         }
+     
+         // Initial check when the page loads
+         checkWindowSize();
+     
+         // Event listener for window resize
+         window.addEventListener("resize", checkWindowSize);
+     });
+     
+     
+         </script>
+    </head>
+
+    <header>
+    
+        <div class="header">
+            <button id="menu-toggle" class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="menu">
+                <li><a href="browsescroll.html">About Us</a></li>
+                <li><a href="browseevent.html">News/Events</a></li>
+                <li><a href="browsehome.html"><img src="dragon.gif" alt="logo" width="343" height="200"></a></li>
+                <li><a href="browsegheehiang.php">Shop with Ghee Hiang</a></li>
+                <li><a href="browsefindus.html">Find Us </a></li>
+            </ul>
+        </div>
+    
+</header>
+
+<body>
+        <div class="line-container">
+            
+                <svg viewBox="0 0 21279 32769" fill="none">
+                    <path d="M21274 0C21274 2333.77 19695.8 4687.87 18906.8 5573.19L15479.6 8708.11C14808.3 10210.3 8912.1 9417.6 7636.02 12169.6C7282.71 12931.5 1311.69 12757.4 4.42209 15914.1L393.068 20964.8L11522.5 26951.6L20744 30413.1L15373.6 32764.3" stroke="#FF0000" stroke-width="24"/>
+                    </svg>
+                   
+        </div>
+
+        <section class="hidden" id="section 1">
+            <h1>History of Ghee Hiang</h1>
+            <p>
+                Founded in 1856<br>
+                Leading Heritage Brand in Penang<br>
+                Products include:<br>
+                    ~Sesame Oil<br>
+                    ~Pastry<br>
+                    ~Beverage
+            </p>
+            <img src="GHPIC/Picture1.png">
+        </section>
+
+        <section class="hidden" id="section 2">
+            <h2>Since 1856</h2>
+            <p>
+                Mass Migration of Chinese Coolies<br>
+                Ghee Hiang was founded by the Teng's Family<br>
+                Beginning of Ghee Hiang traditional pastries
+            </p>
+            <img src="GHPIC/Picture2.jpg">
+            <img src="GHPIC/Picture3.jpg">
+            <img src="GHPIC/Picture5.png">
+            <img src="GHPIC/Picture6.jpg">
+            <img src="GHPIC/Picture7.jpg">
+            <img src="GHPIC/Picture8.jpg">
+            <img src="GHPIC/Picture9.png">
+        </section>
+
+        <section class="hidden" id="section 3">
+            <h2>Since 1926</h2>
+            <p>
+                Ghee Hiang was sold to the Ooi and Ch'ng Family
+            </p>
+            <img src="GHPIC/Picture10.jpg">
+            <img src="GHPIC/Picture11.jpg">
+        </section>
+
+        <section class="hidden" id="section 4">
+            <h2>Since 1930</h2>
+            <p>
+                Ghee Hiang Sesame Oil was introduced
+            </p>
+            <img src="GHPIC/Picture12.png">
+            <img src="GHPIC/Picture13.png">
+            <img src="GHPIC/Picture14.jpg">
+            <img src="GHPIC/Picture15.jpg">
+            <img src="GHPIC/Picture16.jpg">
+            <img src="GHPIC/Picture17.jpg">
+        </section>
+
+        <section class="hidden" id="section 5">
+            <h2>Since 1962</h2>
+            <p>
+                Ghee Hiang Sesame Oil Factory was established<br>
+                Ghee Hiang Coffee & Beverages was introduced
+            </p>
+            <img src="GHPIC/Picture18.jpg">
+            <img src="GHPIC/Picture19.png">
+            <img src="GHPIC/Picture20.png">
+            <img src="GHPIC/Picture21.png">
+            <img src="GHPIC/Picture22.png">
+            <img src="GHPIC/Picture23.png">
+            <img src="GHPIC/Picture24.png">
+        </section>
+
+        <section class="hidden" id="section 6">
+            <h2>Since 2000</h2>
+            <p>
+                Ghee Hiang Concept Store<br>
+                "Four Ghee Hiang Retail Boutique"<br>
+                Legendery Babies & Merchandising
+            </p>
+            <img src="GHPIC/Picture25.jpg">
+            <img src="GHPIC/Picture26.jpg">
+            <img src="GHPIC/Picture27.jpg">
+            <img src="GHPIC/Picture28.jpg">
+            <img src="GHPIC/Picture29.png">
+        </section>
+
+        <section class="hidden" id="section 7">
+            <h2>Since 2023</h2>
+            <p>
+                New Factory in Penang Science Park
+            </p>
+            <img src="GHPIC/Picture30.jpg">
+            <img src="GHPIC/Picture31.jpg">
+        </section>
+
+        <script>
+
+            let path = document.querySelector('path')
+            let pathLength = path.getTotalLength()
+
+            path.style.strokeDasharray = pathLength + ' ' + pathLength;
+
+            path.style.strokeDashoffset = pathLength;
+
+            window.addEventListener('scroll', () => {
+
+                var scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+
+                var drawLength = pathLength * scrollPercentage;
+
+                path.style.strokeDashoffset = pathLength - drawLength;
+
+            })
+
+        </script>
+        <div class="blank-space"></div>
+
+        <footer>
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+            </div>
+            <ul class="social_icon">
+                <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-youtube"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+            </ul>
+            <ul class="menu">
+                <li><a href="browsescroll.html">About Us</a></li>
+                  <li><a href="browseevent.html">News/Events</a></li>
+                  <li><a href="browsegheehiang.php">Shop With Ghee Hiang</a></li>
+                  <li><a href="browsefindus.html">Location</a></li>
+            </ul>
+            <p>Ghee Hiang | All Rights Reserved.</p>
+        </footer>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+    
+        <div onclick="scrollToTop()" class="scrollTop">Top</div>
+        
+        <script>
+        
+          function scrollToTop(){
+            window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Add smooth scrolling behavior
+    });
+          }
+        </script>
+    </body>
+</html>

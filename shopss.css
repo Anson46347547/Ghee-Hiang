@@ -1,0 +1,769 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    position: relative;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.menu li {
+    margin-right: 30px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.menu-toggle {
+    display: none; /* Initially hide the burger menu icon */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: black; /* Change the color to black */
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-toggle span:not(:last-child) {
+    margin-bottom: 4px; /* Adjust spacing between lines */
+}
+
+.menu-toggle.open span:first-child {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.open span:last-child {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.menu-toggle:hover span {
+    background-color: #ffffff;
+}
+
+
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Display the burger menu icon when window size is smaller */
+    }
+
+    .menu {
+        display: none; /* Initially hide the menu items */
+    }
+
+    .menu.show {
+        display: flex; /* Show the menu items when the burger menu icon is clicked */
+        flex-direction: column;
+        position: absolute;
+        top: 40px; /* Adjust as needed */
+        left: 0;
+        background-color: #ff0000;
+        width: 100%;
+        padding: 10px;
+        z-index: 999;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* CSS rules for smaller screens */
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; 
+}
+
+#preloader img {
+    width: 100px; 
+    height: auto; 
+    transform-origin: center;
+}
+
+
+body.loaded #preloader {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    pointer-events: none; 
+}
+
+body.loaded #preloader img {
+    animation: rotate 2s linear infinite; 
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+body main {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+
+body.loaded main {
+    opacity: 1;
+}
+
+body{
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin:0;
+    padding:0;
+    font-family: Arial;
+    overflow-x: hidden;
+}
+
+
+.sesame {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: left;
+}
+
+.header{
+    position: absolute;
+   
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width:100%;
+   
+    z-index: 1;
+    
+}
+
+.header ul{
+    text-align: center;
+}
+
+.header ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+.header ul li a{
+    text-decoration: none;
+    color: #000000d0;
+    font-size: 18px;
+    font-family: Arial;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-left:95px;
+    font-size: 18px;
+}
+
+.header ul li a:hover{
+    color:rgb(165, 112, 42);
+}
+
+.container2,
+.container3,
+.container4,
+.container5,
+.container6,
+.container7 {
+    position: relative; /* Make sure the container is a positioned element */
+}
+
+.carousel-img-size{
+    height: 110vh; 
+    
+}
+
+.carousel-img-size img{
+    max-height: 100%;
+    width: auto;
+    margin: auto;
+}
+
+
+/* Add some blank space */
+.blank-space {
+    margin-bottom: 100px; /* Adjust the value as needed */
+}
+
+.about-text h1{
+    font-size: 50px; /* Adjust the font size as needed */
+    font-weight: bold;
+    margin-bottom: 10px; /* Adjust the margin as needed */
+}
+
+.about-text p{
+    margin-top: 5px; /* Adjust the margin as needed */
+    font-size: 20px; /* Adjust the font size as needed */
+    color: #666; /* Adjust the text color as needed */
+    text-align: justify;
+}
+
+.section {
+    height: 100vh;
+    background-image: url(parallax.png);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.box h2{
+    color: #fff;
+    margin: 0;
+    font-size: 50px;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.item-overlay {
+    max-width: 800px; 
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .product-title {
+    font-size: 24px; /* Adjust the font size as needed */
+    font-weight: bold;
+    margin-bottom: 40px; /* Adjust the margin as needed */
+  }
+
+
+  .product-description {
+    font-size: 16px; /* Adjust the font size as needed */
+    color: #666; /* Adjust the text color as needed */
+    margin-bottom: 20px; /* Adjust the margin as needed */
+  }
+
+  /* Product list styling */
+  .product {
+    list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  }
+
+ /* Product item styling */
+.item-group {
+position: relative;
+  display: block;
+  width: 100%;
+  max-width: 180px;
+  border: 0;
+  text-decoration: none;
+  margin: 0 10px;
+  text-align: left;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  }
+
+  .item-pic img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Label styling */
+  .label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px; /* Adjust the margin as needed */
+    color: #000000;
+  }
+
+  /* Description styling */
+  .item-description {
+    margin-top: 5px; /* Adjust the margin as needed */
+    font-size: 14px; /* Adjust the font size as needed */
+    color: #666; /* Adjust the text color as needed */
+  }
+
+  /* Hover effect for item-group */
+.item-group:hover {
+    background-color: transparent; /* Set a transparent background color for the whole item-group */
+}
+
+.item-group:nth-child(1):hover .item-pic {
+    background-color: #dbdbdb; 
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+
+}
+
+/* Add some spacing and rounded corners to the item-pic */
+.item-pic {
+    padding: 10px; /* Adjust the spacing around the image */
+    position: relative; /* Ensure proper positioning for the button */
+    overflow: hidden; /* Hide overflowing content */
+
+}
+
+/* Hover effect for item-pic */
+.other-element:hover .item-pic img {
+    transform: scale(1.1); /* Add a scale effect on hover */
+    transition: transform 0.3s ease; /* Add a smooth transition for the scale effect */
+}
+
+/* Hover effect for label */
+.other-element:hover .label {
+    color: #dd5e30; /* Change the label color on hover */
+    transition: color 0.3s ease; /* Add a smooth transition for the color change */
+}
+
+.add-to-cart-button {
+    position: absolute; /* Position the button relative to its parent */
+    bottom: -30px; /* Start the button below the image */
+    left: 0; /* Align the button to the left */
+    width: 100%; /* Make the button fill the entire width */
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #f89b39;
+    border: none;
+    border-radius: 0; /* No border-radius */
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: bottom 0.3s ease, background-color 0.3s ease;; /* Smooth transition effect */
+}
+
+.item-pic:hover .add-to-cart-button {
+    bottom: 0;
+}
+
+.add-to-cart-button:hover {
+    background-color: #f3a341; /* Darker color on hover */
+    color: white;
+}
+
+  /* Read more link styling */
+  .Read-more {
+    display: inline-block;
+    padding: 10px 20px; /* Adjust the padding as needed */
+    margin-top: 20px; /* Adjust the margin as needed */
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #000000b3;
+    border-radius: 7px; /* Add border-radius for rounded corners */
+    transition: color 0.3s ease-out, background-color 0.3s ease-out, border-color 0.3s ease-out;
+  }
+
+  .Read-more:hover {
+    background-color: #7e0d0d; /* Adjust the background color on hover if needed */
+  }
+
+  .Read-more1 {
+    display: block;
+    margin: 15px auto 0;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #ecececd1;
+    font-weight: bold;
+    background-color: #000000;
+    border-radius: 50px;
+    transition: color 0.3s ease-out, background-color 0.3s ease-out, border-color 0.3s ease-out;
+    position: absolute;
+    bottom: 10;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+.Read-more1:hover {
+    background-color: #ea7f15e2;
+    color: white;
+}
+
+.tab-menu {
+    display: flex;
+    justify-content: center; /* Align tabs horizontally at the center */
+    padding:20px;   
+}
+
+.tab-menu ul{
+	margin: 0;
+	padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.tab-menu ul li{
+    margin-right: 10px;
+}
+
+.tab-menu ul li a{
+	text-decoration: none;
+	color: #ffffff;
+	background-color: #e3d98f;
+	padding: 7px 25px;
+	border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tab-menu ul li a.active-a{
+	background-color: #d09786;
+	color: #000000a5;
+    font-weight: bold;
+}
+
+.tab{
+    position: relative;
+	display: block;
+    padding: 100px;
+    border: none;
+    text-align: center;
+}
+
+.tab h2{
+    margin-top: -60px;
+}
+.tab p {
+    margin: 0;
+}
+
+.item-group {
+    display: inline-block; /* Display each product group horizontally */
+    margin-right: 20px; /* Adjust spacing between product groups */
+}
+
+.other-element {
+    display: inline-block; /* Display each product group horizontally */
+    width: calc(20% - 20px); /* Set width to 20% of the container width */
+    margin-right: 20px; /* Adjust spacing between product groups */
+    margin-bottom: 20px; /* Add bottom margin for spacing between rows */
+    vertical-align: top; /* Align elements to the top of the line */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    text-align: center;
+}
+
+.other-element:last-child {
+    margin-right: 0; /* Remove the right margin for the last item to prevent extra spacing */
+}
+
+
+.item-pic img {
+    display: block; /* Ensure the image fills the container */
+    width: 100%;
+    height: auto;
+}
+
+.label,
+.item-description {
+    text-align: left; /* Center-align label and description */
+}
+
+
+.wrapper{
+    position: relative;
+}
+
+.wrapper img{
+    width: 100%;
+    height: 95vh;
+    cursor: pointer;
+    transition: filter 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
+}
+
+.wrapper:hover img{
+    filter: brightness(0.7);
+    transform: scale(1.1);
+}
+
+/* Add this CSS to your stylesheet or in a style tag in your HTML file */
+
+.wrapper .overlay .container .section-header h2 {
+    color: white;
+    font-weight: bold;
+}
+
+.wrapper .overlay .container .section-header p {
+    color: white;
+}
+
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.form-wrapper{
+    background-color: transparent;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    background: rgb(83, 17, 17);
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+}
+
+footer .social_icon, footer .menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+footer .social_icon li, footer .menu li{
+    list-style: none;
+}
+
+footer .social_icon li a{
+    font-size: 2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+footer .social_icon li a:hover{
+    transform: translateY(-10px);
+}
+
+footer .menu li a{
+    font-size: 1.2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+footer .menu li a:hover{
+    opacity: 1;
+}
+
+footer p{
+    color:#fff;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+footer .wave{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(wave.png);
+    background-size: 1000px 100px;
+}
+
+footer .wave#wave1{
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+
+}
+
+footer .wave#wave2{
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_02 4s linear infinite;
+
+}
+
+@keyframes animateWave {
+    0%
+    {
+        background-position-x: 1000px;
+    }
+    100%
+    {
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animateWave_02 {
+    0%
+    {
+        background-position-x: 0px;
+    }
+    100%
+    {
+        background-position-x: 1000px;
+    }
+}
+
+.scrollTop{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 10px 15px;
+    background-color: #c7935c;
+    color: #fff;
+    border-radius: 5px;
+    border-radius: 1px solid #fff;
+    cursor: pointer;
+    transition: all 0.5 ease 0s;
+  }
+  
+  .scrollTop:hover{
+    background-color: #f7f7f7;
+    color: #c7935c;
+  }
+
+  .form-wrapper {
+    text-align: center; /* Add text-align: center to center-align the content within the form */
+}
+
+
+.btn-custom-danger
+{
+    background-color: #a80101c6;
+    color:#fff;
+    font-weight: bold;
+    width: 150px;
+    margin: 0 auto; 
+    display: block;
+    border-radius: 50px;
+}
+
+.btn-custom-danger:hover {
+    background-color: #d1819ab2;
+    color: white;
+}
+
+.tab-menu {
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+    justify-content:flex-start;
+    width:71%;
+    margin-left:230px;
+    }
+
+    .tab-menu li {
+        margin: 0 10px;
+    }
+
+    .tab-menu a {
+        padding: 10px 20px;
+        background-color: #f0e68c;
+        border-radius: 5px;
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+        display: inline-block;
+    
+    }
+
+    .tab-menu a.active-a {
+        background-color: #c9c9c9;
+    }
+
+    .tab-menu a:hover {
+        background-color: #ddd;
+        color: #000;
+    }
+
+    .userlogo img{
+        width:50px;
+        position: absolute;
+        top:193px;
+        left:35px;  
+    }
+
+    .cartlogo img{
+        width:50px;
+        position: absolute;
+        top:193px;
+        left:100px;  
+    }
+
+
+.logout-button {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    position: absolute;
+    top:197px;
+    left:705px;
+}
+
+.logout-button:hover {
+    background-color: #ff6666;
+}
+
+.History-button {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    position: absolute;
+    left:180px; 
+}
+
+.History-button:hover {
+    background-color: #ff6666;
+}
